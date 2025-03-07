@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>mz</title>
 
   <!--
     - favicon
@@ -174,9 +174,9 @@
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
@@ -186,9 +186,9 @@
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -205,19 +205,19 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Hola Amigos!</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I am Experimental Developer and Data Enthusiast who blends design,
-            technology, and data to build user-friendly websites, AI tools, and data-driven solutions. Whether it’s a
-            clean,
-            intuitive UI or an automated workflow, I focus on delivering functional, beautiful,
-            and impactful results — ensuring your brand’s message stands out in the most creative and effective way.
-          </p>
+            I am an innovative Data Scientist and Experimental Developer, blending design, technology, and data to build
+            user-centric websites, AI tools, and data-driven solutions. My work focuses on crafting intuitive interfaces
+            and automated workflows that enhance user experience and support business growth. </p>
 
-
+          <p>With expertise in data analysis, visualization, and machine learning, I tackle end-to-end data science
+            projects — from collecting data from third-party sources to delivering actionable insights, such as
+            identifying customer segments. I thrive on solving complex problems and transforming raw data into strategic
+            solutions that drive meaningful impact.</p>
         </section>
 
 
@@ -258,8 +258,7 @@
                 <h4 class="h4 service-item-title">Machine Learning Projects </h4>
 
                 <p class="service-item-text">
-                  Creating predictive models to solve real-world problems.
-                </p>
+                  Developing predictive models to address business challenges. </p>
               </div>
 
             </li>
@@ -304,12 +303,12 @@
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Akshay Deshmukh </h4>
                 <div class="testimonials-text" data-testimonials-text>
-                  <p class="job-title">[Engineering Head (Techademy Learning)]</p>
+                  <p class="job-title">Engineering Head (Techademy)</p>
 
                 </div>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    "He got the job done. He followed instructions, delivered on time,
+                    "He got the job done, delivered on time,
                     and handled tasks with minimal hand-holding. Reliable when needed."
                   </p>
                 </div>
@@ -339,14 +338,14 @@
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <!-- <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
                   <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Huzaif </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
@@ -359,8 +358,8 @@
                 </div>
 
               </div>
-            </li>
-
+            </li> -->
+            <!-- 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
@@ -381,7 +380,7 @@
                 </div>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -922,23 +921,25 @@
 
       <article class="blog" data-page="blog">
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Tech News</h2>
         </header>
-      
+
         <section class="blog-posts">
           <ul id="blog-posts-list" class="blog-posts-list">
             <!-- Blog posts will be loaded here from API -->
           </ul>
-      
+
           <div class="pagination-container" style="display: flex; justify-content: center; margin-top: 30px;">
-            <button id="prev-page" class="pagination-btn" style="margin-right: 10px; padding: 8px 15px; cursor: pointer; background-color: #e6e6e6; border: none; border-radius: 5px;">Previous</button>
+            <button id="prev-page" class="pagination-btn"
+              style="margin-right: 10px; padding: 8px 15px; cursor: pointer; background-color: #e6e6e6; border: none; border-radius: 5px;">Previous</button>
             <span id="page-indicator" style="margin: 0 15px; display: flex; align-items: center;">Page 1</span>
-            <button id="next-page" class="pagination-btn" style="margin-left: 10px; padding: 8px 15px; cursor: pointer; background-color: #e6e6e6; border: none; border-radius: 5px;">Next</button>
+            <button id="next-page" class="pagination-btn"
+              style="margin-left: 10px; padding: 8px 15px; cursor: pointer; background-color: #e6e6e6; border: none; border-radius: 5px;">Next</button>
           </div>
         </section>
       </article>
-      
-      
+
+
 
 
 
@@ -1006,16 +1007,16 @@
     - ionicon link
   -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const blogPostsList = document.getElementById('blog-posts-list');
       const prevPageBtn = document.getElementById('prev-page');
       const nextPageBtn = document.getElementById('next-page');
       const pageIndicator = document.getElementById('page-indicator');
-      
+
       let currentPage = 1;
       const postsPerPage = 6;
       let allBlogPosts = [];
-      
+
       // Format today's date
       function formatDate() {
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -1025,7 +1026,7 @@
         const year = today.getFullYear();
         return `${month} ${day}, ${year}`;
       }
-      
+
       // Fetch blog posts from API
       async function fetchBlogPosts() {
         try {
@@ -1033,9 +1034,9 @@
           if (!response.ok) {
             throw new Error(`Failed to fetch: ${response.status}`);
           }
-          
+
           const data = await response.json();
-          
+
           // Check if the data is an array
           if (Array.isArray(data)) {
             allBlogPosts = data;
@@ -1045,7 +1046,7 @@
           } else {
             throw new Error('Unexpected data format');
           }
-          
+
           renderBlogPosts();
         } catch (error) {
           console.error('Error fetching blog posts:', error);
@@ -1053,36 +1054,36 @@
           blogPostsList.innerHTML = '<li class="blog-post-item" style="text-align: center; padding: 20px;">Failed to load blog posts. Please try again later.</li>';
         }
       }
-      
+
       // Render blog posts based on current page
       function renderBlogPosts() {
         blogPostsList.innerHTML = '';
-        
+
         if (allBlogPosts.length === 0) {
           blogPostsList.innerHTML = '<li class="blog-post-item" style="text-align: center; padding: 20px;">No blog posts available.</li>';
           return;
         }
-        
+
         const startIndex = (currentPage - 1) * postsPerPage;
         const endIndex = Math.min(startIndex + postsPerPage, allBlogPosts.length);
         const currentPosts = allBlogPosts.slice(startIndex, endIndex);
-        
+
         // If no posts are available for the current page, go back to previous page
         if (currentPosts.length === 0 && currentPage > 1) {
           currentPage--;
           renderBlogPosts();
           return;
         }
-        
+
         const todayDate = formatDate();
-        
+
         currentPosts.forEach(post => {
           const blogPostItem = document.createElement('li');
           blogPostItem.className = 'blog-post-item';
-          
+
           // Get image URL or use placeholder
           const imageUrl = post.image || './assets/images/placeholder.jpg';
-          
+
           // Extract domain from link for category
           let category = 'News';
           try {
@@ -1095,7 +1096,7 @@
           } catch (e) {
             console.error('Error parsing URL:', e);
           }
-          
+
           blogPostItem.innerHTML = `
             <a href="${post.link || '#'}" target="_blank">
               <figure class="blog-banner-box">
@@ -1114,29 +1115,29 @@
               </div>
             </a>
           `;
-          
+
           blogPostsList.appendChild(blogPostItem);
         });
-        
+
         // Update pagination UI
         updatePaginationControls();
       }
-      
+
       function updatePaginationControls() {
         const totalPages = Math.ceil(allBlogPosts.length / postsPerPage);
         pageIndicator.textContent = `Page ${currentPage} of ${totalPages || 1}`;
-        
+
         // Enable/disable previous button
         prevPageBtn.disabled = currentPage <= 1;
         prevPageBtn.style.opacity = prevPageBtn.disabled ? '0.5' : '1';
         prevPageBtn.style.cursor = prevPageBtn.disabled ? 'not-allowed' : 'pointer';
-        
+
         // Enable/disable next button
         nextPageBtn.disabled = currentPage >= totalPages;
         nextPageBtn.style.opacity = nextPageBtn.disabled ? '0.5' : '1';
         nextPageBtn.style.cursor = nextPageBtn.disabled ? 'not-allowed' : 'pointer';
       }
-      
+
       // Function to generate placeholder content if API fails
       function generatePlaceholderContent() {
         const placeholders = [];
@@ -1150,23 +1151,23 @@
         }
         return placeholders;
       }
-      
+
       // Event listeners for pagination
-      prevPageBtn.addEventListener('click', function() {
+      prevPageBtn.addEventListener('click', function () {
         if (currentPage > 1) {
           currentPage--;
           renderBlogPosts();
         }
       });
-      
-      nextPageBtn.addEventListener('click', function() {
+
+      nextPageBtn.addEventListener('click', function () {
         const totalPages = Math.ceil(allBlogPosts.length / postsPerPage);
         if (currentPage < totalPages) {
           currentPage++;
           renderBlogPosts();
         }
       });
-      
+
       // Initialize the blog
       fetchBlogPosts().catch(error => {
         console.error('Failed to initialize blog:', error);
@@ -1177,7 +1178,7 @@
   </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
- 
+
 </body>
 
 </html>
